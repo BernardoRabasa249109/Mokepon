@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./assets/selva11.png);
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+}
+
+.subtitulo {
+    font-size: 35px;
+
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 0.5px;
+}
+
+.tarjeta-de-mokepon {
+    width: 250px;
+    height: 150px;
+    background-color: green;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid;
+    font-size: 25px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#boton-mascota {
+    width: 280px;
+    height: 100px;
+    border-radius: 20px;
+    background: transparent;
+    border: 4px solid black;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: brown;
+}
+
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: green;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: white;
+    width: 120px;
+    height: 60PX;
+    color: white;
+    font-size: 20px;
+}
+
+#mensajes {
+    width: 280px;
+    background: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar{
+    background-color: dimgray;
+    width: 150px;
+    height: 60px;
+    border: white;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    text-align: center;
+    gap: 120px;
+    font-size: 15px;
+    color: black;
+}
+
+
+@media (max-widht: 360px) {
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }
+}
